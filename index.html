@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Teoría 14JUL</title>
+    <!--style>
+        *{box-sizing: border-box;}
+        body{background-color: rgba(140, 140, 173, 0.644); margin:0;font-family: sans-serif;}
+        footer{background-color: yellow; background-image: url('paisaje.jpg'); background-size: cover; background-repeat: no-repeat; height:500px;}
+        a, span{color:#0f0ffa;/* text-decoration-line: underline; text-decoration-style: double; text-decoration-color: blue;*/ text-decoration: none; text-transform: capitalize;margin-right: 5%; /*font-size:1.5em;*/}
+        a:hover{text-decoration: underline double blue 3px;}
+        a:active{color:greenyellow;}
+        nav{ /*margin-bottom: 20%;*/ text-align: center; /*height:150px;*/ background-color: brown;padding-top: 5%; padding-bottom: 5%; /*padding-left: 300px;*/ width:100%;}
+        main{width:80%; margin:auto; }
+        header{padding: 5% 2% 5% 2%; border-top: 5px solid black;border-bottom: 5px solid black; /*border-style:ridge; border-width: 10px; border-color: #0f0ffa; */border-bottom: none; background-color: whitesmoke; background-image: url('arbol.png'); background-size: 20%; background-repeat: no-repeat; background-position: 90% 50%;}
+        header h1{font-style: italic;}
+        footer{text-align: center; padding:5% 0;}
+        p{line-height: 150%;text-align:justify;}
+        header h1 img{border:2px solid black; background-color: #0f0ffa; vertical-align: middle;margin:0 2% 0 2%; width:15%;}
+        footer img{width:10%; background-color: azure; margin-top: 5%;}
+        footer a, footer span{color:white;}
+    </style-->
+    <!--style>ul{list-style:lower-alpha; padding:0;list-style-position: inside;}</style-->
+<style>
+    *{box-sizing: border-box; outline:none;}
+    form {text-align: center; font-family: cursive;width:600px; border: 1px solid #95a4e9; margin:auto; padding:20px; /*background-image: url('paisaje.jpg');*/background: rgb(216,224,222);
+background: -moz-linear-gradient(-45deg,  rgb(216,224,222) 0%, rgb(174,191,188) 22%, rgb(153,175,171) 33%, rgb(142,166,162) 50%, rgb(130,157,152) 67%, rgb(78,92,90) 82%, rgb(14,14,14) 100%);
+background: -webkit-linear-gradient(-45deg,  rgb(216,224,222) 0%,rgb(174,191,188) 22%,rgb(153,175,171) 33%,rgb(142,166,162) 50%,rgb(130,157,152) 67%,rgb(78,92,90) 82%,rgb(14,14,14) 100%);
+background: linear-gradient(135deg,  rgb(216,224,222) 0%,rgb(174,191,188) 22%,rgb(153,175,171) 33%,rgb(142,166,162) 50%,rgb(130,157,152) 67%,rgb(78,92,90) 82%,rgb(14,14,14) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', endColorstr='#0e0e0e',GradientType=1 ); border: 3px solid darkmagenta;
+}
+    legend{border:dashed violet; color:white; background-color: #95a4e9;}
+    fieldset{background: rgb(180,221,180);
+background: -moz-linear-gradient(45deg,  rgb(180,221,180) 0%, rgb(131,199,131) 17%, rgb(82,177,82) 33%, rgb(0,138,0) 67%, rgb(0,87,0) 83%, rgb(0,36,0) 100%);
+background: -webkit-linear-gradient(45deg,  rgb(180,221,180) 0%,rgb(131,199,131) 17%,rgb(82,177,82) 33%,rgb(0,138,0) 67%,rgb(0,87,0) 83%,rgb(0,36,0) 100%);
+background: linear-gradient(45deg,  rgb(180,221,180) 0%,rgb(131,199,131) 17%,rgb(82,177,82) 33%,rgb(0,138,0) 67%,rgb(0,87,0) 83%,rgb(0,36,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=1 );
+}
+    input{font-family: sans-serif;}
+    hr{width:500px;}
+       input, button {width:500px; height: 50px; padding: 10px; margin-bottom: 10px; text-align: left;}
+       input[type="submit"],button, input[type="reset"]{background-color: #0A2EF2;text-align: center; color:white;}
+       a{text-decoration: none; font-family: sans-serif;}
+       input[type="image"]{width:20%;height:80px;}
+       input[type="radio"], input[type="checkbox"]{width:20px; height: 20px; vertical-align: middle;}
+       select{margin:4%; width:60%; height: 40px;}
+       textarea{width: 60%; height:150px; resize:none; background-color: #8a8fa3;}
+       label[for="terminos"]{font-style:italic; text-decoration: underline solid #070b23 3px;}
+       </style>
+</head>
+<body>
+    <!--ul>
+    <li>Servicio 1</li>
+    <li>Servicio 2</li>
+</ul>
+<form action="mi_archivo.php" autocomplete="off" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="fname" placeholder="Mauricio" required minlength="6"><br>
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="lname" placeholder="Laurizi"><br>
+    <label for="correo">Correo electrónico</label><br>
+    <input type="email" name="email" id="correo"><br>
+    <label for="numero">Edad:</label><br>
+    <input type="number" name="numero" id="numero" max="42"><br>
+    <label>Contraseña<br>
+        <input type="hidden" name="oculto" value="sesion">
+    <input type="password" name="password"></label><br><br>
+    <input type="submit" value="Hecho"><input type="reset" value="Borrar">
+      </form--> 
+
+          
+
+
+      <form action="mi_archivo.php" method="post" autocomplete="off">
+        <h2>Iniciar sesión</h2>
+        <fieldset><legend>Datos para login:</legend>
+        <input type="text" name="usuario" autofocus placeholder="Introduzca el nombre del usuario"><br>
+        <input type="password" name="contraseña" placeholder="Introduzca la contraseña" title="Ejemplo: 12345678">
+        </fieldset>
+        <fieldset><legend>Sobre vos...</legend>
+<p>Estado civil</p>
+<label for="Casado">Casado</label>
+   <input type="radio" id="Casado" name="estadoCivil" value="casado">
+   <label for="Soltero">Soltero</label>
+   <input type="radio" id="Soltero" name="estadoCivil" value="soltero">
+   <label for="Divorciado">Divorciado</label>
+   <input type="radio" id="Divorciado" name="estadoCivil" value="divorciado">
+   <label for="no">No contesta</label>
+   <input type="radio" id="no" name="estadoCivil" value="-" checked><br>
+  <label for="ciudad">Selecciona tu ciudad</label>
+   <select name="ciudad" id="ciudad">
+    <option>Ciudad 1</option>
+    <option>Ciudad 2</option>
+    <option>Ciudad 3</option>
+    <option>Ciudad 4</option>
+    <option>Ciudad 5</option>
+    <option selected value="">No contesta</option>
+   </select><br>
+   <label for="comentarios">Escribi tus comentarios:</label><br>
+   <textarea name="comentarios" id="comentarios"></textarea><br>
+        </fieldset>
+        <br>
+        <label for="terminos">Para continuar deberás aceptar los términos:</label>
+        <input type="checkbox" name="terminos" id="terminos" required><br>
+        <!--input type="submit" value="Iniciar sesión"-->
+        <!--button>Iniciar sesión</button-->
+        <input type="image" src="arbol.png" alt="submit" title="Iniciar sesión"><br>
+        <input type="reset" value="Eliminar datos">
+        <hr>
+        <a href="#">¿No puede iniciar sesión?</a><br>
+        <a href="#">Registrese para crear una cuenta nueva</a>
+      </form>
+
+    <!--nav>
+    <a href="http://www.clarin.com" target="_blank" title="Visitar el diario Clarín">diario clarín</a>
+    <a href="proyectoIntegrador/index.html" target="_blank" title="Visitar el proyecto">proyecto integrador</a>
+    <a href="#concepto">Enterate de lo que hacemos</a>
+    <a href="#pie" title="Escribile al administrador">escribinos</a>
+    <a href="#pie">redes sociales</a></nav>
+   <header><h1><img src="señora.png" alt="señora" width="200">Contenidos para todos <img src="logo.svg" alt="Señor"></h1></header>
+    <main>
+        <section id="concepto">
+            <h1>Nuestro concepto</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod culpa est quis tenetur explicabo illo distinctio saepe officia repellat, exercitationem voluptatem ea unde qui modi, earum porro? Aliquid, est corporis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, ullam? Sequi obcaecati impedit in nam magni perferendis perspiciatis quia a laudantium ullam, numquam exercitationem. Veritatis odit vitae maxime cupiditate odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet sequi corrupti, assumenda ipsam accusamus harum eius sint aut ea animi eum magnam perferendis provident eligendi, dicta soluta. Repellendus, ratione libero.</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolor, a rerum pariatur provident delectus maiores doloremque mollitia possimus libero dolorum aspernatur reprehenderit? Corrupti vitae suscipit quibusdam unde perspiciatis labore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores exercitationem voluptas accusantium magnam vero, odit nulla consectetur adipisci, doloremque quod a, tempora officia labore sequi quisquam nostrum ut perferendis est!</p>
+        </section>
+    </main>
+    <br>
+<footer id="pie"><span>Redes sociales</span><a href="#">Volver</a><br>
+<a href="mailto:mlaurizi922@gmail.com" title="Escribinos..."><img src="mail.svg" alt="Escribinos..."></a>
+</footer-->
+</body>
+</html>
